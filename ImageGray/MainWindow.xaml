@@ -1,0 +1,16 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageGray"
+        xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" x:Class="ImageGray.MainWindow"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="458" Width="940">
+    <Grid>
+        <Button Content="采集灰度" HorizontalAlignment="Left" Margin="550,204,0,0" VerticalAlignment="Top" Width="232" Click="Button_Click" FontSize="36"/>
+        <HalconDotNet:HWindowControlWPF x:Name="hWindowControl1" HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="515"/>
+        <TextBlock HorizontalAlignment="Left" Margin="550,102,0,0" TextWrapping="Wrap" Text="灰度值：" VerticalAlignment="Top" FontSize="36"/>
+        <TextBlock x:Name="txbGray" HorizontalAlignment="Left" Margin="699,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="223" FontSize="36"/>
+    </Grid>
+</Window>
